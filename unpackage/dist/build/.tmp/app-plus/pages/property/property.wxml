@@ -1,0 +1,1 @@
+<view class="contain"><view class="contenter"><a-p-p-header vue-id="1" bind:__l="__l" vue-slots="{{['title']}}"><view slot="title"><view class="bg-white">物业</view></view></a-p-p-header><common vue-id="2" bind:__l="__l"></common></view><app-footer vue-id="3" type="property" bind:__l="__l"></app-footer></view>

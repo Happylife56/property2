@@ -1,0 +1,60 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/openDoor/openDoor",
+			"style": {}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/property/property",
+			"style": {
+				"navigationBarTitleText": "物业"
+			}
+		},
+		{
+			"path": "pages/openDoor/openDoor",
+			"style": {
+				"navigationBarTitleText": "开门"
+			}
+		},
+		{
+			"path": "pages/AI/AI",
+			"style": {
+				"navigationBarTitleText": "智能家居"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/changCity/index",
+			"style": {
+				"navigationBarTitleText": "城市选择"
+			}
+		}
+	   
+        ,{
+            "path" : "pages/openDoor/longRange/longRange",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/openDoor/temporary/temporary",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "首页",
+		"navigationStyle":"custom"  ,
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
