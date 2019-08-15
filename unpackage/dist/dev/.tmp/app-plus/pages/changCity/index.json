@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "城市选择",
+  "usingComponents": {
+    "a-p-p-header": "/components/APPHeader",
+    "ss-select-city": "/components/ss-select-city/ss-select-city"
+  }
+}

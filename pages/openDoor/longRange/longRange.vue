@@ -1,7 +1,7 @@
 <template>
 	<view class="long-ange">
 		<view class="long-conent">
-			<view class="long-box mt20 bg-white border" v-for="(item,index) in list" :key="index">
+			<view class="long-box mt20 bg-white border" v-for="(item,index) in list" :key="index" @click="clickOpenDoor">
 				<text class="text-green">{{item.type == 'line' ? '在线' : '离线'}}</text>
 				<view class="long-img text-center">
 					<view class="cu-avatar round lg margin-xs" :class="[item.open ? 'bg-red' : 'bg-green']">
@@ -35,7 +35,15 @@
 			}
 		},
 		methods: {
-
+			clickOpenDoor() {
+				const innerAudioContext = uni.createInnerAudioContext();
+				innerAudioContext.autoplay = true;
+				// innerAudioContext.src = 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.mp3';
+				innerAudioContext.src = '/static/open.mp3';
+				innerAudioContext.onPlay(() => {
+					console.log('开始播放');
+				});
+			}
 		}
 	}
 </script>
@@ -70,5 +78,4 @@
 	.long-conent .border {
 		border: #999999 1px solid;
 	}
-
 </style>

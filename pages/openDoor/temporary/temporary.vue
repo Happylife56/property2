@@ -1,29 +1,29 @@
 <template>
 	<view class="temporary-open">
-		<view class="cu-bar bg-white solid-bottom margin-top">
-			<view class="action">
-				<text class="cuIcon-title text-orange"></text> 有效期开始时间：
-			</view>
-			<view class="action">
-				<dyDateTime @getData="getStartData"></dyDateTime>
-				<text class="cuIcon-right"></text>
-			</view>
-		</view>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
-				<text class="cuIcon-title text-orange"></text> 有效期结束时间：
+				<text class="cuIcon-title text-orange"></text>有效期时间：
 			</view>
-			<view class="action">
-				<dyDateTime @getData="geteEndData"></dyDateTime>
+			<view class="action action-flex">
+				<dyDateTime @getData="geteEndData" class="data-time"></dyDateTime>
 				<text class="cuIcon-right"></text>
 			</view>
 		</view>
-		<!-- 二维码 -->
-		<view class="text-center mt20">
-			<image src="../../../../../static/1563620491.png" class="image-scan"></image>
-			<view class="mt20 font20">临时开门密码：888888</view>
+		<view class="cu-form-group margin-top">
+			<text class="cuIcon-title text-orange mr10"></text>
+			<view class="title">有效期时间：</view>
+			<picker @change="PickerChange" :value="index" :range="picker">
+				<view class="picker">
+					{{index>-1?picker[index]:'禁止换行，超出容器部分会以 ... 方式截断'}}
+				</view>
+			</picker>
 		</view>
-		<view class="text-center mt20">
+		<!-- 二维码 -->
+		<view class="text-center mt30 scan-screen">
+			<image src="/static/1563620491.png" class="image-scan"></image>
+			<view class="mt30 font20">临时开门密码：888888</view>
+		</view>
+		<view class="text-center mt30">
 			<button class="cu-btn lg bg-green" @click="shareImg">分享二维码开门</button>
 		</view>
 	</view>
@@ -39,6 +39,8 @@
 			return {
 				startTime: '', //开始时间
 				endTime: '', //结束时间
+				picker: ['5分钟', '10分钟', '30分钟',"60分钟"],
+				index:0
 			}
 		},
 		methods: {
@@ -50,6 +52,9 @@
 			geteEndData(val) {
 				this.endTime = val;
 				console.log(val);
+			},
+			PickerChange(e) {
+				this.index = e.detail.value
 			},
 			//分享
 			shareImg() {
@@ -74,13 +79,22 @@
 <style scoped>
 	.temporary-open {
 		height: 100%;
-		/* display: flex;
-		justify-content: center;
-		align-items: center; */
 	}
 
 	.image-scan {
-		width: 240px;
-		width: 240px;
+		width: 480upx;
+		height: 480upx;
+	}
+	
+	.temporary-open .action-flex{
+		flex: 1;
+		justify-content: flex-end;
+	}
+	.data-time {
+		width: 100%;
+		text-align: right;
+	}
+	.scan-screen{
+		margin-top: 30px;
 	}
 </style>

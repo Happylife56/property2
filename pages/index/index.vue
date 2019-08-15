@@ -1,7 +1,10 @@
 <template>
 	<view class="contain">
+		<!-- #ifdef APP-PLUS -->
+		<view class="status_bar">
+			<view class="top_view"></view>
+		</view>
 		<view class="">
-			
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
 			<text class="title">{{title}}</text>

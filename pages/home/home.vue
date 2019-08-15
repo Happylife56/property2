@@ -1,6 +1,10 @@
 <template>
 	<view class="contain">
 		<view class="contenter">
+		<!-- #ifdef APP-PLUS -->
+		<view class="status_bar">
+			<view class="top_view"></view>
+		</view>
 			<view class="cu-bar search bg-white">
 				<view class="action" @click="getlocation">
 					<text>{{city}}</text>
@@ -31,6 +35,18 @@
 							</view>
 						</view>
 						<text>{{item.name}}</text>
+					</view>
+				</view>
+				<!-- 头条 -->
+				<view class="cu-bar bg-white">
+					<view class="action title-style-3">
+						<text class="text-xl text-red">今日头条</text>
+						<view class="cu-bar bg-white">
+							<view class="action">
+								<text class="cuIcon-titles text-red"></text>
+								<text>今日头条今日头条今日</text>
+							</view>
+						</view>
 					</view>
 				</view>
 				<uniProductList></uniProductList>

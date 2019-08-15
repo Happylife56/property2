@@ -1,0 +1,1 @@
+<view class="app-header"><view class="cu-bar bg-white"><view data-event-opts="{{[['tap',[['navBack',['$event']]]]]}}" class="action" bindtap="__e"><block wx:if="{{bitBack}}"><view><text class="cuIcon-back text-gray"></text>返回</view></block></view><view class="content text-bold"><slot name="title"></slot></view><view class="action"><slot name="action"></slot></view></view></view>

@@ -1,6 +1,10 @@
 <template>
 	<view class="contain">
 		<view class="center content">
+		<!-- #ifdef APP-PLUS -->
+		<view class="status_bar">
+			<view class="top_view"></view>
+		</view>
 			<view class="logo" @click="goLogin" :hover-class="!login ? 'logo-hover' : ''">
 				<image class="logo-img" :src="login ? uerInfo.avatarUrl :avatarUrl"></image>
 				<view class="logo-title">

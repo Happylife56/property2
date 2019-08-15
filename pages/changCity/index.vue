@@ -1,5 +1,9 @@
 <template>
 	<view class="contain">
+		<!-- #ifdef APP-PLUS -->
+		<view class="status_bar">
+			<view class="top_view"></view>
+		</view>
 		<view class="content">
 			<APPHeader :path="`/pages/home/home?city=${value}`">
 				<template #title>
@@ -25,7 +29,7 @@
 			APPHeader,
 			ssSelectCity
 		},
-		mounted(){
+		mounted() {
 			this.value = this.$route.query.city;
 			console.log(this.$route);
 		},

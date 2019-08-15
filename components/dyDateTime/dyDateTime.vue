@@ -1,5 +1,4 @@
 <template>
-
 	<picker @change="bindTimeChange" @columnchange="columnchange" mode="multiSelector" :value="index" :range="array">
 		<view class="uni-input" v-if="timeValue">{{timeValue}}
 		</view>

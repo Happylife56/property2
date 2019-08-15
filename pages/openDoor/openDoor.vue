@@ -1,11 +1,15 @@
 <template>
 	<view class="contain">
+		<!-- #ifdef APP-PLUS -->
+		<view class="status_bar">
+			<view class="top_view"></view>
+		</view>
 		<view class="contenter">
 			<APPHeader :bitBack="false">
 				<template #title>
 					<view class="bg-white">门禁</view>
 				</template>
-				<template #action ><text class="cuIcon-scan text-green" @click="scanCode2"></text></template>
+				<template #action><text class="cuIcon-scan text-green action-scan" @click="scanCode2"></text></template>
 			</APPHeader>
 			<!-- 导航条 -->
 			<scroll-view scroll-x class="nav bg-white">
@@ -22,7 +26,7 @@
 				<!-- 远程开门 -->
 				<longRange v-else-if="TabCur == 1"></longRange>
 				<!-- 临时二维码 -->
-				<temporary v-else=""></temporary>
+				<temporary v-else></temporary>
 			</div>
 		</view>
 		<AppFooter type="door"></AppFooter>
@@ -59,13 +63,12 @@
 						id: 3
 					},
 				],
-				TabCur: 2,
+				TabCur: 0,
 			};
 		},
 		methods: {
 			tabSelect(e) {
 				this.TabCur = e.currentTarget.dataset.id;
-				console.log(this.TabCur);
 			},
 			// 扫码
 			scanCode2() {
@@ -85,7 +88,11 @@
 </script>
 
 <style scoped>
-	.door-content{
+	.door-content {
 		flex: 1;
+	}
+
+	.action-scan {
+		font-size: 24px;
 	}
 </style>

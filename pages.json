@@ -49,6 +49,12 @@
             "path" : "pages/openDoor/temporary/temporary",
             "style" : {}
         }
+        ,{
+            "path" : "pages/addHouse/addHouse",
+            "style" : {
+				"navigationBarTitleText": "添加房屋"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

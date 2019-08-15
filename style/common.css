@@ -40,6 +40,16 @@
 	margin-top: 20upx
 }
 
+.mt30 {
+	margin-top: 40upx;
+}
+
 .text-center {
 	text-align: center;
 }
+
+.status_bar {  
+    height: var(--status-bar-height);  
+    width: 100%;  
+    background-color: #F8F8F8;  
+} 
