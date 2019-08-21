@@ -77,7 +77,7 @@
 					}
 				],
 				cuIconList: [{
-					cuIcon: 'wefill',
+					cuIcon: 'unlock',
 					color: 'red',
 					badge: 0,
 					name: '小区开门'

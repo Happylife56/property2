@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "物业",
-  "usingComponents": {
-    "common": "/components/common",
-    "a-p-p-header": "/components/APPHeader",
-    "app-footer": "/components/AppFooter/index"
-  }
-}

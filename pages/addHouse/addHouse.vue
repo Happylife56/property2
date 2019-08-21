@@ -15,25 +15,48 @@
 					<view class="title">地区：</view>
 					<picker @change="PickerChange" :value="area" :range="areaData">
 						<view class="picker">
-							{{index>-1?picker[index]:'选择地区'}}
+							{{area>-1?areaData[area]:'选择地区'}}
 						</view>
 					</picker>
 				</view>
 				<view class="cu-form-group">
 					<view class="title">小区：</view>
-					<picker @change="PickerChange" :value="community" :range="communityData">
+					<picker @change="communityChange" :value="community" :range="communityData">
 						<view class="picker">
-							{{index>-1?picker[index]:'选择小区'}}
+							{{community>-1?communityData[community]:'选择小区'}}
 						</view>
 					</picker>
 				</view>
 				<view class="cu-form-group">
 					<view class="title">楼栋：</view>
-					<picker @change="PickerChange" :value="building" :range="buildingData">
+					<picker @change="buildingChange" :value="building" :range="buildingData">
 						<view class="picker">
-							{{index>-1?picker[index]:'选择'}}
+							{{building>-1?buildingData[building]:'选择楼栋'}}
 						</view>
 					</picker>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">单元：</view>
+					<picker @change="buildingChange" :value="building" :range="buildingData">
+						<view class="picker">
+							{{building>-1?buildingData[building]:'选择单元'}}
+						</view>
+					</picker>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">门牌号：</view>
+					<input placeholder="请输入门牌号" name="input"></input>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">住户类型：</view>
+					<picker @change="buildingChange" :value="building" :range="buildingData">
+						<view class="picker">
+							{{building>-1?buildingData[building]:'选择类型'}}
+						</view>
+					</picker>
+				</view>
+				<view class="padding flex flex-direction">
+					<button class="cu-btn bg-green lg">提交</button>
 				</view>
 			</scroll-view>
 		</view>
@@ -55,16 +78,25 @@
 				buildingData: ['A栋', 'B栋'], //building
 				unitData: ['1单元', '2单元'], //unit
 				type: ['业主', '租客'], //房屋类型
-				area: '', //地区
-				community: '', //小区
-				building: '', //楼栋
-				unit: '', //单元
+				area: -1, //地区
+				community: -1, //小区
+				building: -1, //楼栋
+				unit: -1, //单元
 			}
 		},
 		methods: {
+			//选择地区
 			PickerChange(e) {
 				this.index = e.detail.value
 			},
+			// 选择小区
+			communityChange(e) {
+				this.community = e.detail.value
+			},
+			// 选择楼栋
+			buildingChange(e) {
+				this.building = e.detail.value
+			}
 		}
 	}
 </script>
