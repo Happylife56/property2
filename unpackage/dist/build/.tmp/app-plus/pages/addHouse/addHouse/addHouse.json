@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "common": "/components/common",
+    "a-p-p-header": "/components/APPHeader"
+  },
+  "component": true
+}

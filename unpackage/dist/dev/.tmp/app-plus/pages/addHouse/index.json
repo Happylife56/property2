@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "添加房屋",
+  "usingComponents": {
+    "a-p-p-header": "/components/APPHeader",
+    "add-house": "/pages/addHouse/addHouse/addHouse",
+    "family-auth": "/pages/addHouse/familyAuth/familyAuth"
+  }
+}

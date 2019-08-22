@@ -1,0 +1,1 @@
+<view class="content-text"><view class="uni-padding-wrap uni-common-mt"><view class="uni-flex uni-column"><view class="flex-item flex-item-V uni-bg-red"><slot></slot></view><view class="flex-item flex-item-V uni-bg-green">此功能正在开发，敬请期待！</view></view></view></view>

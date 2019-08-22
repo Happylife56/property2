@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "开门",
+  "usingComponents": {
+    "a-p-p-header": "/components/APPHeader",
+    "app-footer": "/components/AppFooter/index",
+    "scan-open": "/pages/openDoor/scanOPen/scanOPen",
+    "long-range": "/pages/openDoor/longRange/longRange",
+    "temporary": "/pages/openDoor/temporary/temporary"
+  }
+}
