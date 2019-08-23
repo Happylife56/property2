@@ -11,7 +11,7 @@
       >
         <view class="padding-bottom-sm text-lg">
           <text
-            :class="['cuIcon-' + item.cuIcon,'text-' + item.color]"
+            :class="['cuIcon-' + item.cuIcon,'text-' + item.color,'bg-' + item.bg]"
             v-if="item.cuIcon"
             class="text-lg"
           ></text>
