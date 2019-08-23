@@ -75,7 +75,7 @@ export default {
         provider: "weixin",
         scene: "WXSceneSession",
         type: 2,
-        imageUrl: "/static/logo.jpg",
+        imageUrl: "/static/logo.png",
         success: function (res) {
           console.log("success:" + JSON.stringify(res));
         },

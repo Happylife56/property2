@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/login/forget",
+    "pages/login/reg",
     "pages/openDoor/openDoor",
     "pages/home/home",
     "pages/property/property",

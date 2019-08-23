@@ -3,50 +3,43 @@
     <view class="status_bar">
       <view class="top_view"></view>
     </view>
-    <view class="">
+    <view class="content">
       <image
         class="logo"
-        src="/static/logo.jpg"
+        src="/static/logo.png"
       ></image>
       <view class="text-area">
         <text class="title">{{title}}</text>
       </view>
     </view>
-    <AppFooter></AppFooter>
   </view>
 </template>
 
 <script>
-import AppFooter from '@/components/AppFooter/index.vue'
 export default {
   data() {
     return {
-      title: 'Hello'
+      title: '智慧之家'
     }
-  },
-  onLoad() {
-
-  },
-  components: { AppFooter },
-  methods: {
-
   }
+
 }
 </script>
 
 <style>
 .content {
   height: 100vh;
+  width: 100%;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .logo {
   height: 200upx;
   width: 200upx;
-  margin-top: 200upx;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50upx;
@@ -59,6 +52,5 @@ export default {
 
 .title {
   font-size: 36upx;
-  color: #8f8f94;
 }
 </style>
