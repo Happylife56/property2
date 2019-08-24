@@ -103,57 +103,21 @@ import AppFooter from '@/components/AppFooter/index.vue'
 export default {
   data() {
     return {
-      info: [{
-        content: '../../static/swiper1.jpg'
-      },
-      {
-        content: '../../static/swiper2.jpg'
-      },
-      {
-        content: '../../static/swiper3.jpg'
-      }
+      info: [
+        { content: '/static/swiper1.jpg' },
+        { content: '/static/swiper2.jpg' },
+        { content: '/static/swiper3.jpg' }
       ],
-      cuIconList: [{
-        cuIcon: 'unlock',
-        color: 'red',
-        badge: 0,
-        name: '小区开门'
-      }, {
-        cuIcon: 'edit',
-        color: 'orange',
-        badge: 0,
-        name: '访客管理'
-      }, {
-        cuIcon: 'servicefill',
-        color: 'yellow',
-        badge: 0,
-        name: '小区物业'
-      }, {
-        cuIcon: 'taxi',
-        color: 'olive',
-        badge: 0,
-        name: '车位预约'
-      }, {
-        cuIcon: 'repairfill',
-        color: 'cyan',
-        badge: 0,
-        name: '上门安装'
-      }, {
-        cuIcon: 'clothesfill',
-        color: 'blue',
-        badge: 0,
-        name: '保洁清洗'
-      }, {
-        cuIcon: 'deliver ',
-        color: 'purple',
-        badge: 0,
-        name: '搬家运货'
-      }, {
-        cuIcon: 'questionfill',
-        color: 'mauve',
-        badge: 0,
-        name: '更多'
-      }],
+      cuIconList: [
+        { cuIcon: 'unlock', color: 'red', badge: 0, name: '小区开门' },
+        { cuIcon: 'edit', color: 'orange', badge: 0, name: '访客管理' },
+        { cuIcon: 'servicefill', color: 'yellow', badge: 0, name: '小区物业' },
+        { cuIcon: 'taxi', color: 'olive', badge: 0, name: '车位预约' },
+        { cuIcon: 'repairfill', color: 'cyan', badge: 0, name: '上门安装' },
+        { cuIcon: 'clothesfill', color: 'blue', badge: 0, name: '保洁清洗' },
+        { cuIcon: 'deliver ', color: 'purple', badge: 0, name: '搬家运货' },
+        { cuIcon: 'questionfill', color: 'mauve', badge: 0, name: '更多' }
+      ],
       current: 0,
       mode: 'default',
       location: [],

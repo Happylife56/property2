@@ -38,20 +38,26 @@
         {
             "path": "pages/changCity/index",
             "style": { "navigationBarTitleText": "城市选择" }
-        }
-
-        , {
+        },
+        {
             "path": "pages/openDoor/longRange/longRange",
             "style": { "navigationBarTitleText": "远程开门" }
-        }, {
+        },
+        {
             "path": "pages/openDoor/temporary/temporary",
             "style": { "navigationBarTitleText": "临时二维码" }
-        }, {
+        },
+        {
             "path": "pages/addHouse/index",
             "style": { "navigationBarTitleText": "添加房屋" }
-        }, {
+        },
+        {
             "path": "pages/myHouse/myHouse",
             "style": { "navigationBarTitleText": "我的房屋" }
+        },
+        {
+            "path": "pages/addressAdmin/addressAdmin",
+            "style": { "navigationBarTitleText": "地址管理" }
         }
     ],
     "globalStyle": {

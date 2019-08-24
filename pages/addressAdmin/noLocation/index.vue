@@ -1,0 +1,28 @@
+<template>
+  <view class="no-location">
+    <!-- 没有位置 -->
+    <view class="margin-top padding-left text-lg">定位到位置</view>
+    <view class="cu-list menu margin-top-sm">
+      <view class="cu-item">
+        <view class="content">
+          <text class="text-xl margin-right-sm">
+            <text class="cuIcon-roundclose text-red text-xl"></text>
+          </text>
+          <text class="text-xl">无法获取你的信息位置</text>
+        </view>
+        <view class="action"></view>
+      </view>
+    </view>
+    <view class="margin-top text-center text-lg">请在系统设置中，打开“隐私-定位服务”</view>
+  </view>
+
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+</style>

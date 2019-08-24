@@ -14,7 +14,8 @@
     "pages/openDoor/longRange/longRange",
     "pages/openDoor/temporary/temporary",
     "pages/addHouse/index",
-    "pages/myHouse/myHouse"
+    "pages/myHouse/myHouse",
+    "pages/addressAdmin/addressAdmin"
   ],
   "window": {
     "navigationBarTextStyle": "black",

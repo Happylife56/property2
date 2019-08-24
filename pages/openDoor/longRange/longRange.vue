@@ -5,9 +5,9 @@
         class="long-box mt20 bg-white border"
         v-for="(item,index) in list"
         :key="index"
-        @click="clickOpenDoor(index)"
+        @click="clickOpenDoor(item,index)"
       >
-        <text class="text-green">{{item.type == 'line' ? '离线' : '在线'}}</text>
+        <text class="text-green">{{item.type == 'unline' ? '离线' : '在线'}}</text>
         <view class="long-img text-center">
           <view
             class="cu-avatar round lg margin-xs"
@@ -32,15 +32,15 @@ export default {
   data() {
     return {
       list: [{
-        type: 'line',
+        type: 'unline',
         name: '体验小区开门',
         open: true,
       }, {
-        type: 'unline',
+        type: 'line',
         name: '体验小区开门',
         open: false,
       }, {
-        type: 'line',
+        type: 'unline',
         name: '体验小区开门',
         open: true,
       }],
@@ -53,12 +53,13 @@ export default {
     uniPopup
   },
   methods: {
-    clickOpenDoor(index) {
+    clickOpenDoor(item, index) {
+      if (item.type == 'unline') return
       this.seletedIndex = index;
       const innerAudioContext = uni.createInnerAudioContext();
       innerAudioContext.autoplay = true;
       // innerAudioContext.src = 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.mp3';
-      innerAudioContext.src = '/static/open.mp3';
+      innerAudioContext.src = '/static/opendoor.wav';
       innerAudioContext.onPlay(() => {
         console.log('开始播放');
       });

@@ -1,10 +1,10 @@
 <template>
   <!-- 我的 -->
   <view class="contain">
-    <view class="status_bar">
-      <view class="top_view"></view>
-    </view>
     <view class="contenter my">
+      <view class="status_bar">
+        <view class="top_view"></view>
+      </view>
       <scroll-view scroll-y="true">
         <!-- 头部 -->
         <view class="cu-list menu-avatar">
@@ -56,6 +56,28 @@
               <text class="cuIcon-right"></text>
             </view>
           </view>
+          <list
+            :datas="orderList"
+            :col="5"
+            class="cu-list-money"
+          ></list>
+        </view>
+        <!-- 功能列表 -->
+        <view class="cu-list menu margin-top">
+          <view
+            class="cu-item"
+            v-for="(item,index) in functionList"
+            :key="index"
+            @click="navigatePath(index)"
+          >
+            <view class="content">
+              <text :class="['cuIcon-'+item.iconfont,'text-'+item.color]"></text>
+              <text class="text-grey">{{item.title}}</text>
+            </view>
+            <view class="action">
+              <text class="cuIcon-right text-gray"></text>
+            </view>
+          </view>
         </view>
         <!--  -->
       </scroll-view>
@@ -78,46 +100,55 @@ export default {
       avatarUrl: '/static/userLogo.png',
       uerInfo: {},
       //收藏列表
-      keepList: [{
-        count: 2,
-        color: 'white',
-        name: '服务收藏'
-      }, {
-        count: 4,
-        color: 'white',
-        name: '商品收藏'
-      }, {
-        count: 6,
-        color: 'white',
-        name: '商家收藏'
-      }, {
-        count: 10,
-        color: 'white',
-        name: '浏览足迹'
-      }],
+      keepList: [{ count: 2, color: 'white', name: '服务收藏' },
+      { count: 4, color: 'white', name: '商品收藏' },
+      { count: 6, color: 'white', name: '商家收藏' },
+      { count: 10, color: 'white', name: '浏览足迹' }],
       //钱包积分
       walletPoints: [
-        {
-          cuIcon: 'pay',
-          color: 'gray',
-          name: '钱包'
-        },
-        {
-          cuIcon: 'friend',
-          color: 'gray',
-          name: '人脉'
-        },
-        {
-          cuIcon: 'vip',
-          color: 'gray',
-          name: '卡券'
-        },
-        {
-          cuIcon: 'news',
-          color: 'gray',
-          name: '积分'
-        },
+        { cuIcon: 'pay', color: 'gray', name: '钱包' },
+        { cuIcon: 'friend', color: 'gray', name: '人脉' },
+        { cuIcon: 'vip', color: 'gray', name: '卡券' },
+        { cuIcon: 'news', color: 'gray', name: '积分' },
+      ],
+      // 订单列表
+      orderList: [
+        { iconfont: '/static/my/1.png', color: 'gray', iconcolor: 'green', name: '待付款' },
+        { iconfont: '/static/my/2.png', color: 'gray', iconcolor: 'green', name: '待发货' },
+        { iconfont: '/static/my/3.png', color: 'gray', name: '代收款' },
+        { iconfont: '/static/my/4.png', color: 'gray', name: '评价' },
+        { iconfont: '/static/my/5.png', color: 'gray', name: '退款/售后' }
+      ],
+      // 功能列表
+      functionList: [
+        { iconfont: 'homefill', title: '我的房屋', color: 'red', },
+        { iconfont: 'unlock', title: '门禁管理', color: 'green' },
+        { iconfont: 'locationfill', title: '地址管理', color: 'purple' },
+        { iconfont: 'cascades', title: '我的设备', color: 'mauve' },
+        { iconfont: 'friendfavor', title: '合作申请', color: 'blue' },
+        { iconfont: 'cameraaddfill', title: '人脸识别', color: 'orange' },
       ]
+    }
+  },
+  methods: {
+    //跳转路径
+    navigatePath(index) {
+      switch (index) {
+        case 0: // 我的房屋
+          uni.navigateTo({ url: '/pages/myHouse/myHouse' })
+          break;
+        case 1: // 门禁管理
+          uni.navigateTo({ url: '/pages/openDoor/openDoor' })
+          break;
+        case 2: // 地址管理
+          uni.navigateTo({ url: '/pages/addressAdmin/addressAdmin' })
+          break;
+        case 3: // 我的设备
+          // uni.navigateTo({ url: '/pages/openDoor/openDoor' })
+          break;
+        default:
+          break;
+      }
     }
   }
 }
@@ -129,7 +160,7 @@ export default {
   background-color: #39b54a !important;
 }
 .cu-item {
-  padding: 10px 8px 15px !important;
+  padding: 10px 8px !important;
 }
 .cu-list-money {
   margin-top: 0 !important;

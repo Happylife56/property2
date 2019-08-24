@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "地址管理",
+  "usingComponents": {
+    "a-p-p-header": "/components/APPHeader",
+    "no-location": "/pages/addressAdmin/noLocation/index",
+    "location-info": "/pages/addressAdmin/locationInfo/index"
+  }
+}

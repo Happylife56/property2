@@ -42,11 +42,8 @@ export default {
   methods: {
     //返回上一页
     navBack() {
-      if (this.path) uni.navigateTo({
-        url: this.path,
-      });
-      // else uni.navigateBack()
-      else uni.redirectTo({ url: '/pages/openDoor/openDoor' })
+      if (this.path) uni.redirectTo({ url: this.path });
+      else uni.navigateBack()
     }
   },
 }
