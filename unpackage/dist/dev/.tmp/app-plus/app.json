@@ -15,7 +15,9 @@
     "pages/openDoor/temporary/temporary",
     "pages/addHouse/index",
     "pages/myHouse/myHouse",
-    "pages/addressAdmin/addressAdmin"
+    "pages/addressAdmin/addressAdmin",
+    "pages/addressAdmin/addAddress/index",
+    "pages/set/personalInfo/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

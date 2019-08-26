@@ -1,18 +1,24 @@
 <template>
   <!-- 我的 -->
   <view class="contain">
-    <view class="contenter my">
+    <view class="contenter my contenter-bottom">
       <view class="status_bar">
         <view class="top_view"></view>
       </view>
-      <scroll-view scroll-y="true">
+      <scroll-view
+        scroll-y="true"
+        class="contenter-scroll"
+      >
         <!-- 头部 -->
         <view class="cu-list menu-avatar">
           <view class="bg-green padding-top-sm flex-end padding-right">
             <view><text class="text-xl"><text class="text-white cuIcon-qr_code margin-right-sm"></text></text>推广码</view>
           </view>
           <view class="cu-item cu-item-green">
-            <view class="cu-avatar  lg round">
+            <view
+              class="cu-avatar  lg round"
+              @click="viewPersonInfo"
+            >
               <image
                 class="logo-img"
                 :src="login ? uerInfo.avatarUrl :avatarUrl"
@@ -149,6 +155,10 @@ export default {
         default:
           break;
       }
+    },
+    // 点击查看我的信息
+    viewPersonInfo() {
+      uni.navigateTo({ url: '/pages/set/personalInfo/index' })
     }
   }
 }

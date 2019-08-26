@@ -38,6 +38,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*每个页面公共css */
 /*
   ColorUi for uniApp  v2.1.6 | by 文晓港 2019-05-31 10:44:24
@@ -4853,7 +4865,18 @@ scroll-view.cu-steps .cu-item {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #F8F8F8;
-    padding-bottom: 70px;
+    /* padding-bottom: 60px; */
+    overflow: hidden;
+}
+.contenter-bottom {
+    padding-bottom: 60px;
+}
+.contenter .contenter-scroll {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    overflow-y: auto;
 }
 .app-footer {
     position: fixed;

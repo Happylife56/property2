@@ -1,6 +1,11 @@
 
-.location-info.data-v-3a48d45e {
-  min-height: 100vh;
-  background-color: #fff;
+.box-out.data-v-3a48d45e {
+  color: red;
+  border: 1px solid #e54d42;
+  border-radius: 5px;
+}
+.box-out .box-sign.data-v-3a48d45e {
+  padding: 0 10px;
+  background-color: #e54d42;
 }
 

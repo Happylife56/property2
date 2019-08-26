@@ -19,7 +19,10 @@
           >房屋认证</button>
         </template>
       </APPHeader>
-      <scroll-view scroll-y="true">
+      <scroll-view
+        scroll-y="true"
+        class="contenter-scroll"
+      >
         <view class="cu-list menu">
           <view
             class="cu-item"
@@ -73,7 +76,6 @@ export default {
         { name: '某某小区B栋2003房', code: '656565', status: true },
         { name: '某某小区B栋2003房', code: '656565', status: false },
         { name: '某某小区B栋2003房', code: '656565', status: false },
-        { name: '某某小区B栋2003房', code: '656565', status: false },
       ]
     }
   },
@@ -117,7 +119,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .action-scan {
   font-size: 24px;
 }

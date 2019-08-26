@@ -20,7 +20,17 @@
     display: flex;
     flex-direction: column;
     background-color: #F8F8F8;
-    padding-bottom: 70px;
+    /* padding-bottom: 60px; */
+    overflow: hidden;
+}
+
+.contenter-bottom {
+    padding-bottom: 60px;
+}
+
+.contenter .contenter-scroll {
+    flex: 1;
+    overflow-y: auto;
 }
 
 .app-footer {

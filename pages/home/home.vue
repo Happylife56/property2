@@ -1,6 +1,6 @@
 <template>
   <view class="contain">
-    <view class="contenter">
+    <view class="contenter contenter-bottom">
       <view class="status_bar">
         <view class="top_view"></view>
       </view>
@@ -30,7 +30,7 @@
       </view>
       <scroll-view
         scroll-y="true"
-        class="scroll-Y"
+        class="contenter-scroll scroll-Y"
       >
         <uni-swiper-dot
           :info="info"

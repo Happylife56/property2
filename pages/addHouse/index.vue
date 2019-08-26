@@ -27,7 +27,10 @@
           </view>
         </view>
       </scroll-view>
-      <scroll-view scroll-y="true">
+      <scroll-view
+        scroll-y="true"
+        class="contenter-scroll"
+      >
         <!-- 家人授权 -->
         <familyAuth v-if="TabCur == 1"></familyAuth>
         <!-- 添加房屋 -->

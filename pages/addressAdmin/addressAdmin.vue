@@ -1,9 +1,9 @@
 <template>
   <view class="contain">
-    <view class="status_bar">
-      <view class="top_view"></view>
-    </view>
     <view class="contenter">
+      <view class="status_bar">
+        <view class="top_view"></view>
+      </view>
       <APPHeader path="/pages/my/my">
         <template #title>
           <view class="bg-white">地址管理</view>
@@ -12,11 +12,14 @@
           <button
             v-if="location.length"
             class="cu-btn line-green"
-            @click="addHouse"
+            @click="addNewAddress"
           >新增地址</button>
         </template>
       </APPHeader>
-      <scroll-view scroll-y="true">
+      <scroll-view
+        scroll-y="true"
+        class="contenter-scroll"
+      >
         <!-- 没有获取位置 -->
         <noLocation v-if="!location.length && !city" />
         <!-- 获取位置 -->
@@ -62,9 +65,16 @@ export default {
         }
       });
     },
+    //新增地址
+    addNewAddress() {
+      uni.navigateTo({ url: '/pages/addressAdmin/addAddress/index' })
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
+.contenter {
+  background-color: #ffffff;
+}
 </style>

@@ -58,6 +58,14 @@
         {
             "path": "pages/addressAdmin/addressAdmin",
             "style": { "navigationBarTitleText": "地址管理" }
+        },
+        {
+            "path": "pages/addressAdmin/addAddress/index",
+            "style": { "navigationBarTitleText": "新增地址" }
+        },
+        {
+            "path": "pages/set/personalInfo/index",
+            "style": { "navigationBarTitleText": "我的信息" }
         }
     ],
     "globalStyle": {

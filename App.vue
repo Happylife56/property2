@@ -5,7 +5,19 @@ export default {
   },
   onShow: function () {
     // console.log('App Show')
-    this.validatorLogin();
+    uni.getStorage({
+      key: 'bitImage',
+      success: (res) => {
+        if (res.data == "true") {
+          uni.setStorage({ key: 'bitImage', data: 'false' });
+          // uni.navigateTo({
+          //   url: '/pages/set/personalInfo/index',
+          // });
+        } else {
+          this.validatorLogin();
+        }
+      }
+    })
   },
   onHide: function () {
     // console.log('App Hide')
