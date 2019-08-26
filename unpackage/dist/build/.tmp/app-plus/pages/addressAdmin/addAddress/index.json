@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "新增地址",
+  "usingComponents": {
+    "a-p-p-header": "/components/APPHeader",
+    "change-address": "/components/changeAddress/changeAddress"
+  }
+}

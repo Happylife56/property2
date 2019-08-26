@@ -16,6 +16,9 @@ export default {
         } else {
           this.validatorLogin();
         }
+      },
+      fail:res=>{
+        this.validatorLogin();
       }
     })
   },

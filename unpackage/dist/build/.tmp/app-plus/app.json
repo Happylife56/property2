@@ -1,6 +1,11 @@
 {
   "pages": [
     "pages/openDoor/openDoor",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/login/forget",
+    "pages/login/reg",
+    "pages/openDoor/openDoor",
     "pages/home/home",
     "pages/property/property",
     "pages/openDoor/openDoor",
@@ -10,7 +15,11 @@
     "pages/openDoor/longRange/longRange",
     "pages/openDoor/temporary/temporary",
     "pages/addHouse/index",
-    "pages/myHouse/myHouse"
+    "pages/myHouse/myHouse",
+    "pages/addressAdmin/addressAdmin",
+    "pages/addressAdmin/addAddress/index",
+    "pages/set/personalInfo/index",
+    "pages/set/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

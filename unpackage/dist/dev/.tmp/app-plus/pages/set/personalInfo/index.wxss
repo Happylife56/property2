@@ -1,0 +1,15 @@
+
+.cu-form-group.data-v-821adc5a {
+	padding: 10px 15px;
+}
+.img-handler.data-v-821adc5a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+

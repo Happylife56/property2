@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"view-picker { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; overflow: hidden; position: relative; }\n.",[1],"view-picker .",[1],"picker { line-height: 50px; font-size: 14px; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; text-align: right; }\n",],undefined,{path:"./pages/addressAdmin/addAddress/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/addressAdmin/addAddress/index.wxml') } }));

@@ -1,10 +1,10 @@
 
-.box-out.data-v-3a48d45e {
+.box-out.data-v-739be1f5 {
   color: red;
   border: 1px solid #e54d42;
   border-radius: 5px;
 }
-.box-out .box-sign.data-v-3a48d45e {
+.box-out .box-sign.data-v-739be1f5 {
   padding: 0 10px;
   background-color: #e54d42;
 }

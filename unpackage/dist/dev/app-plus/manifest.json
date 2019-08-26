@@ -48,10 +48,17 @@
     "distribute": {
       "icons": {
         "android": {
-          "hdpi": "C:/Users/Administrator/Desktop/logo.png",
-          "xhdpi": "C:/Users/Administrator/Desktop/logo.png",
-          "xxhdpi": "C:/Users/Administrator/Desktop/logo.png",
-          "xxxhdpi": "C:/Users/Administrator/Desktop/logo.png"
+          "hdpi": "static/logo.png",
+          "xhdpi": "static/logo.png",
+          "xxhdpi": "static/logo.png",
+          "xxxhdpi": "static/logo.png"
+        }
+      },
+      "splashscreen": {
+        "android": {
+          "hdpi": "static/logo.png",
+          "xhdpi": "static/logo.png",
+          "xxhdpi": "static/logo.png"
         }
       },
       "google": {

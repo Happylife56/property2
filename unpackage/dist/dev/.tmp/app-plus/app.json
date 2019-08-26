@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/openDoor/openDoor",
     "pages/index/index",
     "pages/login/login",
     "pages/login/forget",
@@ -17,7 +18,8 @@
     "pages/myHouse/myHouse",
     "pages/addressAdmin/addressAdmin",
     "pages/addressAdmin/addAddress/index",
-    "pages/set/personalInfo/index"
+    "pages/set/personalInfo/index",
+    "pages/set/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
