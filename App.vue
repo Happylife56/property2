@@ -14,11 +14,11 @@ export default {
           //   url: '/pages/set/personalInfo/index',
           // });
         } else {
-          this.validatorLogin();
+          // this.validatorLogin();
         }
       },
-      fail:res=>{
-        this.validatorLogin();
+      fail: res => {
+        // this.validatorLogin();
       }
     })
   },

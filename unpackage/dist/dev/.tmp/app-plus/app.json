@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/openDoor/openDoor",
     "pages/index/index",
     "pages/login/login",
@@ -19,7 +20,10 @@
     "pages/addressAdmin/addressAdmin",
     "pages/addressAdmin/addAddress/index",
     "pages/set/personalInfo/index",
-    "pages/set/index"
+    "pages/set/index",
+    "pages/my/promotionCode/index",
+    "pages/message/index",
+    "pages/message/post/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

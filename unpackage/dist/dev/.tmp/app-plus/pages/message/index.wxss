@@ -1,0 +1,39 @@
+
+.cu-item-green.data-v-2ea673c1,
+.status_bar.data-v-2ea673c1 {
+  background-color: #39b54a !important;
+}
+.icont-xl.data-v-2ea673c1 {
+  font-size: 24px !important;
+}
+.action-relative.data-v-2ea673c1 {
+  position: relative;
+  height: 70%;
+}
+.message.data-v-2ea673c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.view-body.data-v-2ea673c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+}
+.bar-height.data-v-2ea673c1 {
+  min-height: 36px;
+}
+

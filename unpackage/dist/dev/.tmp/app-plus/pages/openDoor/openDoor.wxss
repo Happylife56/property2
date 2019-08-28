@@ -1,9 +1,9 @@
 
-.long-ange.data-v-20411ff1 {
+.long-ange.data-v-72954cd6 {
   height: 100%;
 }
-.long-ange.data-v-20411ff1,
-.long-conent.data-v-20411ff1 {
+.long-ange.data-v-72954cd6,
+.long-conent.data-v-72954cd6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,7 +19,7 @@
       -ms-flex-line-pack: start;
           align-content: flex-start;
 }
-.long-conent .long-box.data-v-20411ff1 {
+.long-conent .long-box.data-v-72954cd6 {
   height: 150px;
   padding: 15px;
   width: 45%;
@@ -38,10 +38,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.long-conent .border.data-v-20411ff1 {
+.long-conent .border.data-v-72954cd6 {
   border: #999999 1px solid;
 }
-@-webkit-keyframes rotateIn-data-v-20411ff1 {
+@-webkit-keyframes rotateIn-data-v-72954cd6 {
 from {
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -57,7 +57,7 @@ to {
     opacity: 1;
 }
 }
-@keyframes rotateIn-data-v-20411ff1 {
+@keyframes rotateIn-data-v-72954cd6 {
 from {
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -73,20 +73,20 @@ to {
     opacity: 1;
 }
 }
-.rotateIn.data-v-20411ff1 {
-  -webkit-animation: rotateIn-data-v-20411ff1 2s infinite;
-          animation: rotateIn-data-v-20411ff1 2s infinite;
+.rotateIn.data-v-72954cd6 {
+  -webkit-animation: rotateIn-data-v-72954cd6 2s infinite;
+          animation: rotateIn-data-v-72954cd6 2s infinite;
 }
 
 
-.temporary-open.data-v-7f2c9051 {
+.temporary-open.data-v-25a0c9f5 {
   height: 100%;
 }
-.image-scan.data-v-7f2c9051 {
+.image-scan.data-v-25a0c9f5 {
   width: 480rpx;
   height: 480rpx;
 }
-.temporary-open .action-flex.data-v-7f2c9051 {
+.temporary-open .action-flex.data-v-25a0c9f5 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -96,22 +96,22 @@ to {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.data-time.data-v-7f2c9051 {
+.data-time.data-v-25a0c9f5 {
   width: 100%;
   text-align: right;
 }
-.scan-screen.data-v-7f2c9051 {
+.scan-screen.data-v-25a0c9f5 {
   margin-top: 30px;
 }
 
 
-.door-content.data-v-3afc9c4a {
+.door-content.data-v-2b27fdb4 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.action-scan.data-v-3afc9c4a {
+.action-scan.data-v-2b27fdb4 {
   font-size: 24px;
 }
 

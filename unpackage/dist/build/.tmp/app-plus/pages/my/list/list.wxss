@@ -11,18 +11,18 @@
     url("https://at.alicdn.com/t/font_1368029_jfgx5ep7nk.svg#iconfont")
       format("svg");
 }
-.iconfont.data-v-b339aa64 {
+.iconfont.data-v-380b8772 {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.cu-item-green.data-v-b339aa64 {
+.cu-item-green.data-v-380b8772 {
   background-color: #39b54a !important;
 }
-uni-image.data-v-b339aa64,
-.image-icon.data-v-b339aa64 {
+uni-image.data-v-380b8772,
+.image-icon.data-v-380b8772 {
   width: 32px !important;
   height: 32px !important;
 }

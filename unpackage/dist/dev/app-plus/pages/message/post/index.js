@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"bg-group.",[1],"data-v-c153b678 { background-color: transparent; }\n",],undefined,{path:"./pages/message/post/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/message/post/index.wxml') } }));

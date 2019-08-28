@@ -1,9 +1,9 @@
 
-.swiper-item .swiper-img.data-v-f6c36e44 {
+.swiper-item .swiper-img.data-v-5bb6bf82 {
   width: 100%;
   height: 150px;
 }
-.header.data-v-f6c36e44 {
+.header.data-v-5bb6bf82 {
   background-color: #3492e9;
   padding: 10px;
   display: -webkit-box;
@@ -19,11 +19,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.header .scan.data-v-f6c36e44 {
+.header .scan.data-v-5bb6bf82 {
   width: 30px;
   height: 30px;
 }
-.color-white.data-v-f6c36e44 {
+.color-white.data-v-5bb6bf82 {
   color: #fff !important;
 }
 

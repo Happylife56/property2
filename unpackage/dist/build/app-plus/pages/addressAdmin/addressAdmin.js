@@ -1,2 +1,2 @@
-setCssToHead([".",[1],"contenter.",[1],"data-v-9a0adbd0 { background-color: #ffffff; }\n",],undefined,{path:"./pages/addressAdmin/addressAdmin.wxss"})();
+setCssToHead([".",[1],"contenter.",[1],"data-v-84e86790 { background-color: #ffffff; }\n",],undefined,{path:"./pages/addressAdmin/addressAdmin.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/addressAdmin/addressAdmin.wxml') } }));

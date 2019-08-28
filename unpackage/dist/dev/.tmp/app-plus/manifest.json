@@ -56,9 +56,9 @@
       },
       "splashscreen": {
         "android": {
-          "hdpi": "static/logo.png",
-          "xhdpi": "static/logo.png",
-          "xxhdpi": "static/logo.png"
+          "hdpi": "",
+          "xhdpi": "",
+          "xxhdpi": ""
         }
       },
       "google": {

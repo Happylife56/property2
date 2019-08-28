@@ -1,4 +1,4 @@
-.lotus-address-picker.data-v-567d88e6 {
+.lotus-address-picker.data-v-246b539e {
   font-size: 26rpx;
   padding-top: 30rpx;
   overflow: hidden;
@@ -12,7 +12,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.lotus-address-picker-box.data-v-567d88e6 {
+.lotus-address-picker-box.data-v-246b539e {
   /*display: -webkit-box;
   display: -webkit-flex;*/
   display: -webkit-box;
@@ -34,7 +34,7 @@
   padding-top: 10rpx;
   padding-bottom: 10rpx;
 }
-.lotus-address-picker-box-item.data-v-567d88e6 {
+.lotus-address-picker-box-item.data-v-246b539e {
   height: 600rpx;
   overflow-y: auto;
   width: 33.333%;
@@ -43,11 +43,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.lotus-address-picker2.data-v-567d88e6 {
+.lotus-address-picker2.data-v-246b539e {
   color: #e93b3d;
   position: relative;
 }
-.lotus-address-picker2.data-v-567d88e6:after {
+.lotus-address-picker2.data-v-246b539e:after {
   content: '';
   position: absolute;
   right: 0;
@@ -64,7 +64,7 @@
   border-left-color: #e93b3d;
   border-bottom-color: #e93b3d;
 }
-.lotus-address-mask.data-v-567d88e6 {
+.lotus-address-mask.data-v-246b539e {
   position: fixed;
   left: 0;
   top: 0;
@@ -73,7 +73,7 @@
   z-index: 999;
   background: rgba(0, 0, 0, 0.5);
 }
-.lotus-address-box.data-v-567d88e6 {
+.lotus-address-box.data-v-246b539e {
   background: #fff;
   position: absolute;
   left: 0;
@@ -81,7 +81,7 @@
   width: 100%;
   height: auto;
 }
-.lotus-address-action.data-v-567d88e6 {
+.lotus-address-action.data-v-246b539e {
   font-size: 30rpx;
   /*display: -webkit-box;
   display: -webkit-flex;*/
@@ -104,7 +104,7 @@
   padding: 25rpx 30rpx;
   position: relative;
 }
-.lotus-address-action.data-v-567d88e6:after {
+.lotus-address-action.data-v-246b539e:after {
   content: " ";
   position: absolute;
   left: 0;
@@ -120,7 +120,7 @@
       -ms-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.lotus-address-action.data-v-567d88e6:before {
+.lotus-address-action.data-v-246b539e:before {
   content: " ";
   position: absolute;
   left: 0;
@@ -136,10 +136,10 @@
       -ms-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.lotus-address-action-cancel.data-v-567d88e6 {
+.lotus-address-action-cancel.data-v-246b539e {
   color: #969696;
 }
-.lotus-address-action-affirm.data-v-567d88e6 {
+.lotus-address-action-affirm.data-v-246b539e {
   color: #e93b3d;
 }
 

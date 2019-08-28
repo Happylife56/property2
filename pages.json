@@ -1,6 +1,10 @@
 {
-    "pages": [
-        {
+    "pages": [{
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "启动页"
+            }
+        }, {
             "path": "pages/openDoor/openDoor",
             "style": {
                 "navigationBarTitleText": "开门"
@@ -118,6 +122,24 @@
             "path": "pages/set/index",
             "style": {
                 "navigationBarTitleText": "设置"
+            }
+        },
+        {
+            "path": "pages/my/promotionCode/index",
+            "style": {
+                "navigationBarTitleText": "我的推广码"
+            }
+        },
+        {
+            "path": "pages/message/index",
+            "style": {
+                "navigationBarTitleText": "消息"
+            }
+        },
+        {
+            "path": "pages/message/post/index",
+            "style": {
+                "navigationBarTitleText": "发帖"
             }
         }
     ],
