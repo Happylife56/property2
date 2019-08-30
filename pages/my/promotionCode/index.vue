@@ -50,9 +50,13 @@ export default {
   methods: {
     touchstart(e) {
       this.timeStamp = e.timeStamp
+      console.log(e.timeStamp)
     },
     touchend(e) {
-      if (e.timeStamp - this.timeStamp > 1200) {
+      console.log(e.timeStamp)
+      if (e.timeStamp - this.timeStamp > 1000) {
+        // 设置是否打开上传图片
+        uni.setStorage({ key: 'bitImage', data: 'true' });
         // 分享二维码
         uni.share({
           provider: "weixin",

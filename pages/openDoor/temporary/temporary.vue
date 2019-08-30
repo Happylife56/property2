@@ -71,6 +71,8 @@ export default {
     },
     //分享
     shareImg() {
+      // 设置是否打开上传图片
+      uni.setStorage({ key: 'bitImage', data: 'true' });
       uni.share({
         provider: "weixin",
         scene: "WXSceneSession",

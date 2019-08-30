@@ -1,10 +1,5 @@
 {
-    "pages": [{
-            "path": "pages/index/index",
-            "style": {
-                "navigationBarTitleText": "启动页"
-            }
-        }, {
+    "pages": [ {
             "path": "pages/openDoor/openDoor",
             "style": {
                 "navigationBarTitleText": "开门"

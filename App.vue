@@ -8,6 +8,7 @@ export default {
     uni.getStorage({
       key: 'bitImage',
       success: (res) => {
+        console.log(res)
         if (res.data == "true") {
           uni.setStorage({ key: 'bitImage', data: 'false' });
           // uni.navigateTo({
