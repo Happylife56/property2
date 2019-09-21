@@ -9,8 +9,10 @@
 				<view class="content">
 					<view class="section" id="current">
 						<view class="city-title">当前城市</view>
-						<view class="city-list">
+						<view class="city-list city-location">
 							<view class="city-item">{{current}}</view>
+							<!-- 定位 -->
+							<view><text class="cuIcon-focus text-green"></text></view>
 						</view>
 					</view>
 					<view class="section" id="hot" v-if="hotCitys.length">
@@ -109,6 +111,16 @@
 				color: #333;
 				font-size: 28upx;
 				margin-bottom: 28upx;
+			}
+			
+			.city-location{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				
+				.cuIcon-focus{
+					font-size: 44upx;
+				}
 			}
 
 			.letter {
