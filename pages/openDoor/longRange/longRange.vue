@@ -1,7 +1,7 @@
 <template>
 	<view class="long-ange">
-		<view class="long-conent" v-if="!list.length">
-			<view class="long-box mt20 bg-white border" v-for="(item,index) in list" :key="index" @click="clickOpenDoor(item,index)">
+		<view class="long-conent" v-if="list.length">
+			<view class="long-box mt20 bg-white border" v-for="(item,index) in list" :key="item.id" @click="clickOpenDoor(item,index)">
 				<text class="text-green">{{item.type == 'unline' ? '离线' : '在线'}}</text>
 				<view class="long-img text-center">
 					<view class="cu-avatar round lg margin-xs" :class="[!item.open ? 'bg-red' : 'bg-green',{'rotateIn':seletedIndex == index}]">
@@ -20,21 +20,27 @@
 	import uniPopup from "@/components/uni-popup/uni-popup.vue"
 	import $api from '@/http/api.js'
 	export default {
+		props: {
+			list: {
+				type: Array,
+				default: () => []
+			}
+		},
 		data() {
 			return {
-				list: [{
-					type: 'unline',
-					name: '体验小区开门',
-					open: true,
-				}, {
-					type: 'line',
-					name: '体验小区开门',
-					open: false,
-				}, {
-					type: 'unline',
-					name: '体验小区开门',
-					open: true,
-				}],
+				// list: [{
+				// 	type: 'unline',
+				// 	name: '体验小区开门',
+				// 	open: true,
+				// }, {
+				// 	type: 'line',
+				// 	name: '体验小区开门',
+				// 	open: false,
+				// }, {
+				// 	type: 'unline',
+				// 	name: '体验小区开门',
+				// 	open: true,
+				// }],
 				biTanima: false, //是否执行动画
 				seletedIndex: -1, //选择的下标
 				loadModal: false
@@ -43,21 +49,33 @@
 		components: {
 			uniPopup
 		},
-		created() {
-			this.getDoorLock()
-		},
 		methods: {
-			// 获取门禁点
-			async getDoorLock() {
-				let result = await $api.getOneUser(1)
-				console.log(result);
-				if(result){
-					this.list = []
-					this.list = result.points
-					console.log(this.list)
-				}
-			},
+			// 点击开门
 			clickOpenDoor(item, index) {
+				const token = uni.getStorageSync('token')
+				const {
+					iotDeviceAcsdoor: {
+						iotId
+					}
+				} = item
+				const relUser = uni.getStorageSync('relUser')
+				console.log(relUser)
+				let params = {
+					"accessToken": token,
+					"clientData": {
+						"PageId": 1
+					},
+					"requestData": {
+						"Action": "RemoteControlRequest",
+						"DeviceProtocol": "WeiGengDoorProtocol",
+						"Method": "doOpen",
+						"DoorIndex": index + 1,
+						"IotId": iotId,
+						"CardNo": relUser.mobile
+					}
+				}
+				console.log(params,1)
+				// 如果不在线
 				if (item.type == 'unline') return
 				this.seletedIndex = index;
 				const innerAudioContext = uni.createInnerAudioContext();

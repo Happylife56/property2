@@ -23,7 +23,7 @@
 				<!-- 二维码开门 -->
 				<scanOpen v-if="TabCur == 0"></scanOpen>
 				<!-- 远程开门 -->
-				<longRange v-else-if="TabCur == 1"></longRange>
+				<longRange v-else-if="TabCur == 1" :list="list"></longRange>
 				<!-- 临时二维码 -->
 				<temporary v-else></temporary>
 			</view>
@@ -63,26 +63,46 @@
 						id: 3
 					},
 				],
-				TabCur: 1,
+				TabCur: '',
+				list: []
 			};
 		},
-		created() {
-			// 判断token是否存在
-			const token = uni.getStorageSync('token')
-			console.log(token);
-			if(!token) uni.navigateTo({
-				url: '/pages/login/login'
-			})
-			this.getRelUser()
+		onShow() {
+			this.TabCur = 1
+			this.initDate()
 		},
 		methods: {
+			// init
+			async initDate() {
+				// 判断token是否存在
+				const token = uni.getStorageSync('token')
+				console.log(token);
+				if (!token) uni.navigateTo({
+					url: '/pages/login/login'
+				})
+				await this.getRelUser()
+			},
 			tabSelect(e) {
 				this.TabCur = e.currentTarget.dataset.id;
 			},
 			// 
 			async getRelUser() {
 				let result = await $api.relUser()
-				if(result && result.length) uni.setStorageSync('relUser',result[0])
+				if (result && result.length) {
+					uni.setStorageSync('relUser', result[0])
+					console.log(result)
+					this.getDoorLock(result[0].id)
+				}
+			},
+			// 获取门禁点
+			async getDoorLock(id) {
+				let result = await $api.getOneUser(id)
+				console.log(result);
+				if (result) {
+					this.list = []
+					this.list = result.points
+					console.log(this.list)
+				}
 			},
 			// 扫码
 			scanCode2() {
